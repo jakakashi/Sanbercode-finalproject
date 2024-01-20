@@ -8,7 +8,7 @@ const DataLogin = require('../support/data/DataLogin')
 // cy.wait(5000)
 // cy.xpath('//*[contains(@href,"dashboard")]', {timeout: 5000}).should('be.visible');
 
-describe('Login', () => {
+describe('Login - Positive Case', () => {
   it('Login dengan valid credential', () => {
     LoginPage.visit();
     LoginPage.fillEmail(DataLogin.validEmail);
@@ -17,7 +17,9 @@ describe('Login', () => {
     DashboardPage.verivyDashboardPage();
 
   })
+})
 
+describe('Login - Negative Case', () => {
   it('Login dengan email kosong', () => {
     LoginPage.visit();
     LoginPage.blankEmail();
