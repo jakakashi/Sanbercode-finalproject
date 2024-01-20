@@ -11,8 +11,8 @@ const DataLogin = require('../support/data/DataLogin')
 describe('Login', () => {
   it('Login dengan valid credential', () => {
     LoginPage.visit();
-    LoginPage.fillEmail(DataLogin.validEmail)
-    LoginPage.fillPassword(DataLogin.validPassword)
+    LoginPage.fillEmail(DataLogin.validEmail);
+    LoginPage.fillPassword(DataLogin.validPassword);
     LoginPage.clikLoginButton();
     DashboardPage.verivyDashboardPage();
 
@@ -38,8 +38,8 @@ describe('Login', () => {
 
   it('Login dengan email belum terdaftar', () => {
     LoginPage.visit();
-    LoginPage.fillPassword(DataLogin.invalidEmail)
-    LoginPage.fillPassword(DataLogin.validPassword)
+    LoginPage.fillPassword(DataLogin.invalidEmail);
+    LoginPage.fillPassword(DataLogin.validPassword);
     LoginPage.clikLoginButton();
     LoginPage.notifGagalLogin();
 
@@ -47,8 +47,8 @@ describe('Login', () => {
 
   it('Login dengan password yang salah', () => {
     LoginPage.visit();
-    LoginPage.fillEmail(DataLogin.validEmail)
-    LoginPage.fillPassword(DataLogin.invalidPassword)
+    LoginPage.fillEmail(DataLogin.validEmail);
+    LoginPage.fillPassword(DataLogin.invalidPassword);
     LoginPage.clikLoginButton();
     LoginPage.notifGagalLogin();
 
@@ -56,8 +56,8 @@ describe('Login', () => {
 
   it('Login dengan wrong format email', () => {
     LoginPage.visit();
-    LoginPage.fillEmail(DataLogin.wrongFormatEmail)
-    LoginPage.fillPassword(DataLogin.validPassword)
+    LoginPage.fillEmail(DataLogin.wrongFormatEmail);
+    LoginPage.fillPassword(DataLogin.validPassword);
     LoginPage.clikLoginButton();
     LoginPage.notifGagalLogin();
     

@@ -9,7 +9,7 @@ class LoginPage {
    // cy.xpath('//*[contains(@class,"chakra-button css-1n8i4of")]').click();
    // cy.wait(5000)
     async fillEmail(email){
-        cy.xpath(locator.datatestid.email_field).type(email)
+        cy.xpath(locator.datatestid.email_field).type(email);
     }
 
     async blankEmail(){
