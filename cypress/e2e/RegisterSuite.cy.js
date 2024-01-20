@@ -1,14 +1,14 @@
 const DataRegister = require('../support/data/DataRegister');
-const DashboardPage = require('../support/pages/DashboardPage');
 const RegisterPage = require('../support/pages/RegisterPage');
 
 describe('Register - Postitive Case', () => {
     it('Register user baru', () => {
         RegisterPage.visitRegister();
-    //   LoginPage.fillEmail(DataLogin.validEmail)
-    //   LoginPage.fillPassword(DataLogin.validPassword)
-    //   LoginPage.clikLoginButton();
-    //   DashboardPage.verivyDashboardPage();
+        RegisterPage.fillNamaToko(DataRegister.RegisterNamatoko);
+        RegisterPage.fillEmail(DataRegister.RegisterEmail);
+        RegisterPage.fillPassword(DataRegister.RegisterPassword);
+        RegisterPage.clikRegisterButton();
+        RegisterPage.notifSuksesRegister();
   
     })
 })

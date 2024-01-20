@@ -39,6 +39,10 @@ class RegisterPage {
     async notifGagalRegister(){
         cy.xpath(locatorRegister.dataregisterid.notifgagalregister).should('be.visible');
     }
+
+    async notifSuksesRegister(){
+        cy.xpath(locatorRegister.dataregisterid.notifsuksesregister).should('be.visible');
+    }
 }
 
 module.exports = new RegisterPage();

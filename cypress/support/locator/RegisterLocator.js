@@ -4,6 +4,7 @@ module.exports = {
         email_field: '//*[@id="email"]',
         password_field: '//*[@id="password"]',
         btn_register: '//*[contains(@class,"chakra-button css-1n8i4of")]',
-        notifgagalregister: '//*[contains(@class,"chakra-alert__icon css-vjdx0l")]'
+        notifgagalregister: '//*[contains(@class,"chakra-alert__icon css-vjdx0l")]',
+        notifsuksesregister: '//*[contains(text(),"Toko berhasil didaftarkan")]'
     }
 }
