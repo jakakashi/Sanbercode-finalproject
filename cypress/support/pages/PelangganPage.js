@@ -30,12 +30,12 @@ class PelangganPage {
         cy.xpath(locator.datapelangganid.keterangan_field).type(keterangan);
     }
     
-    async clikSimpanPelanggan(password){
+    async clikSimpanPelanggan(){
         cy.xpath(locator.datapelangganid.btn_simpanpelanggan).click();
     }
 
     async notifSuksesAddPelanggan(){
-        cy.xpath(locator.datapelangganid.notifsuksesregister).should('be.visible');
+        cy.xpath(locator.datapelangganid.notifsuksesaddpenlanggan).should('be.visible');
     }
 
     async notifGagalAddPelanggan(){
