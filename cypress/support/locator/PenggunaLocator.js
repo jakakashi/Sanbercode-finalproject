@@ -8,6 +8,7 @@ module.exports = {
         btn_addpengguna: '//*[@class="chakra-button css-1piskbq"]',
         btn_simpanpengguna: '//*[contains(@class,"chakra-button css-l5lnz6")]',
         notifgagaladdpengguna: '//*[contains(@class,"chakra-alert css-qwanz3")]',
-        notifsuksesaddpengguna: '//*[contains(text(),"item ditambahkan")]'
+        notifsuksesaddpengguna: '//*[contains(text(),"item ditambahkan")]',
+        btn_optionpengguna: '//*[contains(@class,"chakra-button chakra-menu__menu-button css-pu8osu")]' 
     }
 }

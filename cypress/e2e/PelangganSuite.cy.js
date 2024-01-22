@@ -23,7 +23,11 @@ describe('Menu Pelanggan - Postitive Case', () => {
   
     })
 
-    
+    it('Hapus Pelanggan baru', () => {
+        PelangganPage.clickOptionPelanggan();
+        PelangganPage.clickHapusPelanggan();
+  
+    })
 })
 
 describe('Menu Pelanggan - Negative Case', () => {
@@ -45,6 +49,5 @@ describe('Menu Pelanggan - Negative Case', () => {
         PelangganPage.notifGagalAddPelanggan();
   
     })
-
-    
 })
+

@@ -34,6 +34,16 @@ class PelangganPage {
         cy.xpath(locator.datapelangganid.btn_simpanpelanggan).click();
     }
 
+    async clickOptionPelanggan(){
+        //cy.xpath(locator.datapelangganid.btn_optionpelanggan).click();
+        cy.get('#menu-button-75').click();
+    }
+
+    async clickHapusPelanggan(){
+        //cy.get('#menu-list-19-menuitem-17').click();
+        cy.xpath(locator.datapelangganid.btn_optionhapus).click();
+    }
+
     async notifSuksesAddPelanggan(){
         cy.xpath(locator.datapelangganid.notifsuksesaddpenlanggan).should('be.visible');
     }
